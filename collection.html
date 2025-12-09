@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+   <header class="navbar">
+    <nav class="navbar-container">
+        <a href="index.html" class="logo">
+            <img src="./images/index.png" alt="Nostra Logo">
+        </a>
+
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="collection.html">Collections</a>
+            <a href="contact.html">Contact</a>
+            <a href="reviews.html">Customer Review</a>
+        </div>
+
+        <div class="menu-icon" id="menuToggle">☰</div>
+    </nav>
+</header>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Customer Review</a>
+    </nav>
+
+  <main class="section">
+        <div class="container">
+            <h1 class="section-title">Our <span> Beautiful Collections </span></h1>
+
+            <section class="collections-page">
+
+
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" placeholder="Search dresses..." onkeyup="searchProducts()">
+
+                <!-- Filter Buttons -->
+                <div class="filters">
+                    <button onclick="filterProducts('all')">All</button>
+                    <button onclick="filterProducts('womens')">Women</button>
+                    <button onclick="filterProducts('mens')">Men</button>
+                    <button onclick="filterProducts('kids')">Kids</button>
+                    <button onclick="filterProducts('Inner Garments')">Beauty</button>
+                </div>
+
+
+                <!-- Dress Products -->
+                <div class="product-container" id="productContainer">
+
+                    <!-- WOMEN -->
+                    <div class="product-card" data-category="womens">
+                        <img src="./images/2.chudi.jpeg">
+                        <h3>Women's Floral Dress</h3>
+                        <h5>$ 399</h5>
+                    </div>
+
+                    <div class="product-card" data-category="womens">
+                        <img src="./images/flor.jpeg">
+                        <h3>Women's Party Gown</h3>
+                        <h5>$ 499</h5>
+                    </div>
+                    <div class="product-card" data-category="womens">
+                        <img src="./images/2,women.jpeg">
+                        <h3>Women's Formals</h3>
+                        <h5>$ 599</h5>
+                    </div>
+                    <div class="product-card" data-category="womens">
+                        <img src="./images/3.women.jpeg">
+                        <h3>Women's Kurti Set</h3>
+                        <h5>$ 349</h5>
+                    </div>
+                        <div class="product-card" data-category="womens">
+                        <img src="./images/4.women.jpeg">
+                        <h3>Women' long maxi</h3>
+                        <h5>$ 399</h5>
+                    </div>
+
+                    <!-- MEN -->
+
+
+                    <div class="product-card" data-category="mens">
+                        <img src="./images/casual.jpeg">
+                        <h3>Men's Casual T-Shirt</h3>
+                        <h5>$ 299</h5>
+                    </div>
+
+                    <div class="product-card" data-category="mens">
+                        <img src="./images/kuta.jpeg">
+                        <h3>Men's Kurta</h3>
+                        <h5>$ 399</h5>
+                    </div>
+                    <div class="product-card" data-category="mens">
+                        <img src="./images/coupke.jpeg">
+                        <h3>Couple Wedding Fits</h3>
+                        <h5>$ 2999</h5>
+                    </div>
+
+
+
+
+
+                    <!-- KIDS -->
+                    <div class="product-card" data-category="kids">
+                        <img src="./images/BLOCK.jpeg">
+                        <h3>Kids Frock</h3>
+                        <h5>$ 399</h5>
+                    </div>
+
+                    <div class="product-card" data-category="kids">
+                        <img src="./images/party.jpeg">
+                        <h3>Kids Party Dress</h3>
+                        <h5>$ 999</h5>
+                    </div>
+
+                    <div class="product-card" data-category="kids">
+                        <img src="./images/traditional.jpeg">
+                        <h3>Kids Traditional Dress</h3>
+                        <h5>$ 899</h5>
+                    </div>
+                    <div class="product-card" data-category="kids">
+                        <img src="./images/western.jpeg">
+                        <h3>Kids Western Fits</h3>
+                        <h5>$ 399</h5>
+                    </div>
+                    <!--Inner Garments-->
+                    <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/derma.avif">
+                        <h3>derma</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+                    <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/lakme.avif">
+                        <h3>lakme</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+                    <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/maybeline.avif">
+                        <h3>maybeline</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+                    <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/mama.avif">
+                        <h3>mama earth</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+                                       <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/cetabhil.avif">
+                        <h3>cetabhil</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+                    <div class="product-card" data-category="Inner Garments">
+                        <img src="./images/nivea.avif">
+                        <h3>nivea</h3>
+                        <h5>$ 399 - Combo</h5>
+                    </div>
+
+                </div>
+
+            </section>
+
+      <!-- FOOTER -->
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-column">
+                <h3>About</h3>
+                <a href="#">Our Story</a>
+                <a href="#">Why Choose Us</a>
+                <a href="#">Team</a>
+                <a href="#">Careers</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#">Women's Fits</a>
+                <a href="#">Wedding Fits</a>
+                <a href="#">Mens's Collections</a>
+                <a href="#">Top Deals</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <a href="#">Customer Support</a>
+                <a href="#">Online Purchase</a>
+                <a href="#">New Collections</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact US</h3>
+                
+         <a href="#">CUSTOMER POLICIES</a>
+          <a href="#">FAQ</a>
+          <a href="#">T&C</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Track Order</a>
+         <a href="#">Shipping</a>
+          <a href="#">Cancellations</a>
+         <a href="#">Returns</a>
+         <a href="#">Privacy Policy</a>
+              
+               
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 NOSTRA. All Rights Reserved. Powered by NOSTRA Online Shopping.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
